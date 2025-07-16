@@ -8,7 +8,7 @@ dotenv.config()
 const app = express()
 //middleware
 app.use(express.json());
-app.use(ratelimiter)
+// app.use(ratelimiter)
 app.use("/api/transactions",transactionRoutes)
 
 const port = process.env.PORT
